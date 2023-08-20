@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VotesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +15,15 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});
+Route::get('/vote', [VotesController::class, 'index'])->middleware(['auth', 'valid']);
+Route::post('/vote', [VotesController::class, 'vote'])->middleware(['auth', 'valid']);
+Route::get('/logout', [UserController::class, 'logout'])->middleware(['auth']);
+Route::post('/login', [UserController::class, 'login'])->name('login');
 
 Route::get('/login', function () {
     return view('login');
 });
 
-Route::post('/login', [UserController::class, 'login'])->name('login');
+Route::get('/done', function () {
+    return view('done');
+})->middleware('auth');

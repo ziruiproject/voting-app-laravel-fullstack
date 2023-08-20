@@ -35,6 +35,13 @@ class UserSeeder extends Seeder
             'email' => 'jane@example.com',
             'password' => '5002231076',
             'is_candidate' => true,
+            'objective' =>
+            "Visi:
+Menciptakan masyarakat yang sadar akan hak suara dan berpartisipasi aktif dalam proses demokrasi.
+Misi:
+1. Mengedukasi masyarakat tentang pentingnya hak suara dan peranannya dalam pembentukan masa depan.
+2. Menyediakan platform yang mudah diakses untuk masyarakat dalam menjalankan hak suara mereka.
+3. Memastikan integritas proses pemilihan dengan pengawasan ketat dan transparansi."
         ]);
 
         User::create([
@@ -67,6 +74,13 @@ class UserSeeder extends Seeder
             'email' => 'william@example.com',
             'password' => '5002231080',
             'is_candidate' => true,
+            'objective' =>
+            "Visi:
+Menciptakan masyarakat yang sadar akan hak suara dan berpartisipasi aktif dalam proses demokrasi.
+Misi:
+1. Mengedukasi masyarakat tentang pentingnya hak suara dan peranannya dalam pembentukan masa depan.
+2. Menyediakan platform yang mudah diakses untuk masyarakat dalam menjalankan hak suara mereka.
+3. Memastikan integritas proses pemilihan dengan pengawasan ketat dan transparansi."
         ]);
 
         User::create([
@@ -91,6 +105,13 @@ class UserSeeder extends Seeder
             'email' => 'sophia@example.com',
             'password' => '5002231083',
             'is_candidate' => true,
+            'objective' =>
+            "Visi:
+Menciptakan masyarakat yang sadar akan hak suara dan berpartisipasi aktif dalam proses demokrasi.
+Misi:
+1. Mengedukasi masyarakat tentang pentingnya hak suara dan peranannya dalam pembentukan masa depan.
+2. Menyediakan platform yang mudah diakses untuk masyarakat dalam menjalankan hak suara mereka.
+3. Memastikan integritas proses pemilihan dengan pengawasan ketat dan transparansi."
         ]);
     }
 }

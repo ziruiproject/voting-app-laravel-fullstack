@@ -1,6 +1,4 @@
 @extends('app')
-
-@section('title', 'About Us')
 @section('content')
 <div class="h-100 d-flex justify-content-center align-items-center">
     <form method="POST" action="/login">
@@ -19,6 +17,7 @@
             @if ($errors->has('password'))
             <span class="text-danger">{{ $errors->first('password') }}</span>
             @endif
+            <span class="text-danger">{{ session('error') }}</span>
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
     </form>

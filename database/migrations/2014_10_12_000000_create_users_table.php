@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->boolean('is_candidate')->default(false);
+            $table->longText('objective')->nullable()->when('is_candidate', false);
             $table->rememberToken();
             $table->timestamps();
         });
